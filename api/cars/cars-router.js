@@ -28,7 +28,7 @@ router.post(
   checkVinNumberValid,
   checkVinNumberUnique,
   async (req, res, next) => {
-    res.send("posting new car");
+    res.json("posting new car");
   }
 );
 
