@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 
 server.use("*", (req, res, next) => {
-  next({ status: 404, message: "not found from server.js" });
+  next({ status: 404, message: "not found from server.js!" });
 });
 
 server.use((err, req, res, next) => {
